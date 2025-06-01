@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn==1.5.1 # Specified 1.5+, using a recent patch
+imbalanced-learn
+xgboost # Optional, but good to have
+shap
+matplotlib
+seaborn
+joblib
+torch # For reproducibility hook, though not actively used for model training in this plan
+# Add specific versions if known issues arise or for stricter reproducibility
+# Example: pandas==2.2.0

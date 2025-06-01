@@ -1,0 +1,68 @@
+Attribute,Description,Type,Categorization
+VDRL_RESULT,VDRL result,Binary,(i) Positive and (ii) Negative
+CONS_ALCOHOL,Consume alcohol,Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+RH_FACTOR,RH factor,Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+SMOKER,Smoker,Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+PLAN_PREGNANCY,Planned pregnancy,Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+BLOOD_GROUP,Blood group,Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+HAS_PREG_RISK,Has pregnancy risk,Categorical,"(i) O, (ii) A, (iii) B, (iv) AB,
+and (v) Not informed"
+TET_VACCINE,Tetanus vaccination,Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+IS_HEAD_FAMILY,Is head of family,Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+MARITAL_STATUS,Marital status,Categorical,"(i) Single, (ii) Married, (iii) Widowed,
+(iv) Judicial separation, (v) Divorced,
+and (vi) Not informed"
+FOOD_INSECURITY,Food insecurity,Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+NUM_ABORTIONS,Number of abortions,Categorical,"(i) None, (ii) One, (iii) Two,
+(iv) More than two,
+and (v) Not informed"
+NUM_LIV_CHILDREN,Number of living children,Categorical,"(i) None, (ii) One, (iii) Two,
+(iv) More than two,
+and (v) Not informed"
+NUM_PREGNANCIES,Number of pregnancies,Categorical,"(i) None, (ii) One, (iii) Two,
+(iv) More than two,
+and (v) Not informed"
+FAM_PLANNING,"Received information about
+family planning",Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+TYPE_HOUSE,Type of house construction,Categorical,"(i) Straw, (ii) Wood, (iii) Clay,
+(iv) Plaster, (v) Masonry,
+and (vi) Not informed"
+HAS_FAM_INCOME,Has family income,Binary,(i) Positive and (ii) Negative
+LEVEL_SCHOOLING,Level of schooling,Categorical,"(i) Complete elementary school,
+(ii) Incomplete elementary school,
+(iii) Complete middle school,
+(iv) Incomplete middle school,
+(v) Complete high school,
+(vi) Incomplete high school,
+(vii) Complete superior school,
+(viii) Incomplete superior school,
+and (ix) Not informed"
+CONN_SEWER_NET,"House connected to
+the sewer network",Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+NUM_RES_HOUSEHOLD,"Number of residents in
+the household",Categorical,"(i) None, (ii) One, (iii) Two,
+(iv) Three, (v) More than three,
+and (vi) Not informed"
+HAS_FRU_TREE,Has fruit trees,Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+HAS_VEG_GARDEN,Has a vegetable garden,Categorical,"(i) Positive, (ii) Negative,
+and (iii) Not informed"
+FAM_INCOME,"Family income informed
+at prenatal cares",Categorical,"(i) Less than 500,
+(ii) Between 501 and 1000,
+(iii) More than 1000,
+and (iv) Not informed"
+HOUSING_STATUS,Housing status,Categorical,"(i) Owned, (ii) Rented, (iii) Donated, and (iv) Not informed"
+WATER_TREATMENT,Type of water treatment used,Categorical,"(i) Filtered, (ii) Boiled, (iii) Disinfected (chlorine),
+(iv) None, and (v) Not informed"
+AGE,Age of the pregnant woman,Numerical,--
