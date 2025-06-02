@@ -1,0 +1,7 @@
+CONGENITAL SYPHILIS SCREENING: BUSINESS RECOMMENDATIONS
+================================================================================
+
+Recommended Model: Gradient Boosting
+Optimal Threshold: 0.250
+Detection Rate: 0.0%
+Cost Savings: -0.2%

@@ -1,0 +1,7 @@
+Model,Optimal_Threshold,Total_Cost,Cost_per_Patient,Recall,Precision,False_Positives,False_Negatives
+Gradient Boosting,0.25,-164400,-20.08306865379917,0.0,0.0,40,164
+Stacking Ensemble,0.42,-164170,-20.05497190324945,0.0,0.0,17,164
+Voting Ensemble,0.68,-164060,-20.041534326899583,0.0,0.0,6,164
+Random Forest,0.66,-164030,-20.03786953334962,0.0,0.0,3,164
+Logistic Regression,0.93,-164000,-20.03420473979966,0.0,0.0,0,164
+XGBoost,0.98,-164000,-20.03420473979966,0.0,0.0,0,164
