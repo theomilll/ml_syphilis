@@ -1,43 +1,53 @@
-# Predicting Congenital Syphilis From PMCP Records
+# Previsão de Sífilis Congênita a Partir de Registros do PMCP
 
-This project aims to predict congenital syphilis using machine learning techniques based on PMCP (Prevention of Mother-to-Child Transmission Program) records.
+Este projeto visa prever a sífilis congênita utilizando técnicas de aprendizado de máquina a partir de registros do PMCP (Programa de Prevenção da Transmissão Vertical). Esta versão foca em uma análise aprimorada com engenharia de atributos avançada, métodos de ensemble e aprendizado sensível a custos para otimizar a detecção e o custo-benefício do rastreamento.
 
-## Project Structure
+## Estrutura do Projeto
 
-```
-.
-├── data/                    # raw .csv from Mendeley (attributes.csv, data_set.csv)
-├── notebooks/               # exploratory & sanity-check notebooks
-├── src/
-│   ├── preprocessing.py     # cleaning + feature engineering pipeline
-│   ├── model_selection.py   # search spaces, CV & training routines
-│   ├── evaluation.py        # metrics, plots, interpretability
-│   └── utils.py
-├── models/                  # persisted artefacts (.joblib or .pkl)
-├── reports/
-│   ├── figures/             # auto-generated charts
-│   └── tables/
-├── requirements.txt         # Python package dependencies
-└── README.md                # This file
-```
+.├── data/                    # Dados brutos (ex: data_set.csv)├── notebooks/               # Notebooks para análise e modelagem (ex: 02_enhanced_analysis.ipynb)├── src/                     # Código fonte│   ├── preprocessing.py     # Pipeline de limpeza e engenharia de atributos│   ├── model_selection.py   # (Conforme estrutura original, para busca de hiperparâmetros, etc.)│   ├── evaluation.py        # (Conforme estrutura original, para métricas e plots)│   └── utils.py             # Funções utilitárias├── models/                  # Artefatos persistidos (ex: enhanced_deployment_model.joblib)├── reports/                 # Relatórios gerados (figuras, tabelas)├── requirements.txt         # Dependências Python└── README.md                # Este arquivo
+## Destaques Técnicos da Análise Aprimorada
 
-## Setup
+O núcleo desta análise aprimorada, detalhado em `notebooks/02_enhanced_analysis.ipynb`, inclui:
 
-1.  Clone the repository.
-2.  Create a virtual environment (recommended):
+* **Engenharia de Atributos Avançada:** Criação de novas features como `RISK_SCORE`, `SOCIO_ECONOMIC_INDEX`, `HEALTH_AWARENESS` e `AGE_RISK_CATEGORY` para capturar relações complexas nos dados.
+* **Pré-processamento e Balanceamento:**
+    * Transformação de dados utilizando `SimpleImputer`, `StandardScaler` e `OneHotEncoder`.
+    * Uso da técnica `SMOTETomek` para lidar com o desbalanceamento de classes.
+* **Seleção e Importância de Atributos:** Análise de relevância das features utilizando Random Forest e Mutual Information.
+* **Modelagem Avançada com Ensembles:**
+    * Implementação e avaliação de modelos base otimizados: Regressão Logística, Random Forest, XGBoost e Gradient Boosting.
+    * Construção e avaliação de modelos de ensemble: `VotingClassifier` (soft voting) e `StackingClassifier`.
+* **Aprendizado Sensível a Custos:**
+    * Definição de uma matriz de custos para simular o impacto financeiro de diferentes erros de classificação (Falsos Positivos, Falsos Negativos).
+    * Otimização do threshold de decisão dos modelos para minimizar o custo total associado ao rastreamento.
+* **Modelo Recomendado:** `Gradient Boosting`, com um threshold otimizado de **0.250**, demonstrou o melhor desempenho na análise de custo-benefício.
+* **Artefato de Deployment:** O modelo final recomendado, juntamente com o pré-processador e metadados relevantes (threshold, nomes das features, matriz de custo), é salvo em `models/enhanced_deployment_model.joblib`.
+
+## Configuração
+
+1.  Clone o repositório:
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    git clone <url-do-repositorio>
+    cd <nome-do-repositorio>
     ```
-3.  Install dependencies:
+2.  Crie e ative um ambiente virtual (recomendado):
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate  # No Windows: venv\Scripts\activate
+    ```
+    *Nota: A análise foi desenvolvida utilizando Python 3.11.*
+3.  Instale as dependências:
     ```bash
     pip install -r requirements.txt
     ```
 
-## Usage
+## Uso
 
-(Instructions on how to run the pipeline will be added here as development progresses.)
+1.  Certifique-se de que o arquivo de dados brutos (ex: `data_set.csv`) esteja localizado no diretório `data/`.
+2.  Para executar o pipeline completo de análise, engenharia de atributos, treinamento de modelos, avaliação e otimização de custos, execute o notebook Jupyter:
+    `notebooks/02_enhanced_analysis.ipynb`
+3.  O modelo treinado e pronto para deployment (`enhanced_deployment_model.joblib`) estará disponível no diretório `models/` após a execução bem-sucedida do notebook.
 
-## Reproducibility
+## Reprodutibilidade
 
-Random seeds are fixed to `42` across the project to ensure reproducibility of results. See `src/utils.py` and individual scripts for details.
+As seeds aleatórias são fixadas em `42` em todos os processos estocásticos (divisão de dados, modelos, etc.) para garantir a reprodutibilidade dos resultados. Consulte `src/utils.py` e os notebooks para detalhes específicos da implementação.
