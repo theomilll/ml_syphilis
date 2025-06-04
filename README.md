@@ -2,9 +2,6 @@
 
 Este projeto visa prever a sífilis congênita utilizando técnicas de aprendizado de máquina a partir de registros do PMCP (Programa de Prevenção da Transmissão Vertical). Esta versão foca em uma análise aprimorada com engenharia de atributos avançada, métodos de ensemble e aprendizado sensível a custos para otimizar a detecção e o custo-benefício do rastreamento.
 
-## Estrutura do Projeto
-
-.├── data/                    # Dados brutos (ex: data_set.csv)├── notebooks/               # Notebooks para análise e modelagem (ex: 02_enhanced_analysis.ipynb)├── src/                     # Código fonte│   ├── preprocessing.py     # Pipeline de limpeza e engenharia de atributos│   ├── model_selection.py   # (Conforme estrutura original, para busca de hiperparâmetros, etc.)│   ├── evaluation.py        # (Conforme estrutura original, para métricas e plots)│   └── utils.py             # Funções utilitárias├── models/                  # Artefatos persistidos (ex: enhanced_deployment_model.joblib)├── reports/                 # Relatórios gerados (figuras, tabelas)├── requirements.txt         # Dependências Python└── README.md                # Este arquivo
 ## Destaques Técnicos da Análise Aprimorada
 
 O núcleo desta análise aprimorada, detalhado em `notebooks/02_enhanced_analysis.ipynb`, inclui:
