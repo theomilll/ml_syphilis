@@ -20,23 +20,6 @@ O núcleo desta análise aprimorada, detalhado em `notebooks/02_enhanced_analysi
 * **Modelo Recomendado:** `Gradient Boosting`, com um threshold otimizado de **0.250**, demonstrou o melhor desempenho na análise de custo-benefício.
 * **Artefato de Deployment:** O modelo final recomendado, juntamente com o pré-processador e metadados relevantes (threshold, nomes das features, matriz de custo), é salvo em `models/enhanced_deployment_model.joblib`.
 
-## Configuração
-
-1.  Clone o repositório:
-    ```bash
-    git clone <url-do-repositorio>
-    cd <nome-do-repositorio>
-    ```
-2.  Crie e ative um ambiente virtual (recomendado):
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # No Windows: venv\Scripts\activate
-    ```
-3.  Instale as dependências:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
 ## Uso
 
 1.  Certifique-se de que o arquivo de dados brutos (ex: `data_set.csv`) esteja localizado no diretório `data/`.
