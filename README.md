@@ -30,3 +30,18 @@ O núcleo desta análise, detalhado em `notebooks/final_notebook.ipynb`, inclui:
 ## Reprodutibilidade
 
 As seeds aleatórias são fixadas em `42` em todos os processos estocásticos (divisão de dados, modelos, etc.) para garantir a reprodutibilidade dos resultados. Consulte `src/utils.py` e os notebooks para detalhes específicos da implementação.
+
+## Integrantes do Grupo
+
+Lara Pessoa - 
+Pedro Xavier - @PHxavier1
+Rafael Menezes -
+Théo Moura - @theomilll
+
+## Disciplina
+
+Aprendizado de Máquina - 2025.1
+
+## Instituição de ensino
+
+CESAR School
