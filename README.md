@@ -32,7 +32,6 @@ O núcleo desta análise aprimorada, detalhado em `notebooks/02_enhanced_analysi
     python3 -m venv venv
     source venv/bin/activate  # No Windows: venv\Scripts\activate
     ```
-    *Nota: A análise foi desenvolvida utilizando Python 3.11.*
 3.  Instale as dependências:
     ```bash
     pip install -r requirements.txt
@@ -42,7 +41,7 @@ O núcleo desta análise aprimorada, detalhado em `notebooks/02_enhanced_analysi
 
 1.  Certifique-se de que o arquivo de dados brutos (ex: `data_set.csv`) esteja localizado no diretório `data/`.
 2.  Para executar o pipeline completo de análise, engenharia de atributos, treinamento de modelos, avaliação e otimização de custos, execute o notebook Jupyter:
-    `notebooks/02_enhanced_analysis.ipynb`
+    `notebooks/final_notebook.ipynb`
 3.  O modelo treinado e pronto para deployment (`enhanced_deployment_model.joblib`) estará disponível no diretório `models/` após a execução bem-sucedida do notebook.
 
 ## Reprodutibilidade
