@@ -34,8 +34,11 @@ As seeds aleatórias são fixadas em `42` em todos os processos estocásticos (d
 ## Integrantes do Grupo
 
 Lara Pessoa - 
+
 Pedro Xavier - @PHxavier1
+
 Rafael Menezes -
+
 Théo Moura - @theomilll
 
 ## Disciplina
