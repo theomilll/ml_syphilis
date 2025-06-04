@@ -37,7 +37,7 @@ Lara Pessoa -
 
 Pedro Xavier - @PHxavier1
 
-Rafael Menezes -
+Rafael Menezes - @menex100
 
 Théo Moura - @theomilll
 
