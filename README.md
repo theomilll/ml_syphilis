@@ -4,7 +4,7 @@ Este projeto visa prever a sífilis congênita utilizando técnicas de aprendiza
 
 ## Destaques Técnicos da Análise Aprimorada
 
-O núcleo desta análise aprimorada, detalhado em `notebooks/02_enhanced_analysis.ipynb`, inclui:
+O núcleo desta análise, detalhado em `notebooks/final_notebook.ipynb`, inclui:
 
 * **Engenharia de Atributos Avançada:** Criação de novas features como `RISK_SCORE`, `SOCIO_ECONOMIC_INDEX`, `HEALTH_AWARENESS` e `AGE_RISK_CATEGORY` para capturar relações complexas nos dados.
 * **Pré-processamento e Balanceamento:**
